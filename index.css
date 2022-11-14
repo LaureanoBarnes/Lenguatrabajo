@@ -1,0 +1,401 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Roboto',sans-serif;
+    margin:0;
+    background-color: rgb(221, 221, 221);
+}
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;
+    text-shadow: 1px 0px 0px black,
+    0px 1px 0px black,
+    -1px 0px 0px black,
+    0px -1px 0px black;}
+
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;
+    text-shadow: 0.1px 0px 0px black,
+        0px 0.1px 0px black,
+        -0.1px 0px 0px black,
+        0px -0.1px 0px black;
+    }
+        
+ul{ list-style: none;}
+button:hover{
+    background-color: rgb(139, 139, 139);
+}
+.container{
+    max-width: 1400px;
+    margin:auto;
+}
+header{
+    background-color: rgb(0, 0, 0);
+    box-shadow: 2px 0px 2px orangered,
+        0px 2px 0px orangered,
+        -2px 0px 0px orangered,
+        0px -2px 0px orangered;
+}
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(196, 100, 36);
+    font-size: 1.5em;
+}
+header .container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav{
+    display: flex;
+    position:relative;
+    left: 20%;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+header a{
+    position:relative;
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(196, 100, 36);
+}
+header a:hover{
+    color: blueviolet;
+}
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0)
+    );
+    background-image: url("media/Lengua.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.color-acento{color: rgb(196, 100, 36);} 
+#hero h1{
+    color: rgb(196, 100, 36);
+    text-shadow: 1px 0px 0px black,
+        0px 1px 0px black,
+        -1px 0px 0px black,
+        0px -1px 0px black;
+        box-shadow: 2px 0px 2px,
+        0px 2px 0px,
+        -2px 0px 0px,
+        0px -2px 0px;
+}
+#Queeslengua{
+    text-align: left;
+    padding: 200px 12px;
+}
+.dropdown-menu{
+    display: none;
+}
+.nav-item:hover .dropdown-menu{
+    display: block;
+    position:relative;
+    
+}
+.Desplegable2-menu{
+    display:none;
+}
+.nav-item2:hover .Desplegable2-menu{
+    display: block;
+    position:relative;
+    right:0.001%;
+}
+ header .dropdown-menu{
+    left:72%;
+        }
+        header .dropdown-toggle{
+            left:72%
+        }
+        header .Desplegable2-menu{
+            left:75%;
+                }
+                header .nav-item2{
+                    left:87%
+                }
+#Queeslengua{
+    text-align: left;
+    padding: 80px 12px;
+}
+@media (min-width:720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    #Queeslengua .img-container{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ),url("media/.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 100%;
+        color: pink;
+        font-size: 150%;
+        display:flex;
+        text-align: left;
+        text-shadow: 1px 0px 0px black,
+        0px 1px 0px black,
+        -1px 0px 0px black,
+        0px -1px 0px black;
+        justify-content: center;
+    }
+    #Queeslengua h2{
+        margin-top: 0px;
+    }
+
+    #Maestros{
+        text-align: center;
+        padding: 200px 12px;
+    }
+    @media (min-width:720px){
+        header{
+            position: fixed;
+            width: 100%;
+        }
+        header .container{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        header nav{
+            flex-direction: row;
+            padding-bottom: 0;
+            padding-right: 20px;
+        }
+        #Maestros .img-container{
+            background-image: linear-gradient(
+                0deg,
+                rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)
+            ),url("media/Maestro1.png");
+            background-size: cover;
+            background-position: center center;
+            height: 200px;
+            width: 15%;
+            color: pink;
+            justify-content: center;
+        }
+        #Maestros h2{
+            margin-top: -20px;
+        }
+    
+    #Ctitanic{
+        text-align: center;
+        padding: 200px 12px;
+    }   
+    }
+    .Desplegable2-menu{
+        display:none;
+    }
+    .nav-item2:hover .Desplegable2-menu{
+        display: block;
+        position:relative;
+        right:0.001%;
+    }
+    header .dropdown-menu{
+     left:52%;
+    }
+    header .dropdown-toggle{
+        left:52%
+    }
+    .nav-item2{
+        margin-right: 4%;
+
+    }
+    header .Desplegable2-menu{
+        left:1%;
+            }
+            header .nav-item2{
+                left:12%
+            }
+    #Maestros{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ),url("media/Quienes-Somos.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 100%px;
+        width: 100%;
+        color: black;
+        justify-content: center;
+    }
+    #JornadaExtra{
+        text-align: center;
+        padding: 200px 12px;
+    }
+        #JornadaExtra .img-container{
+            background-image: linear-gradient(
+                0deg,
+                rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)
+            ),url("media/Maestro1.png");
+            background-size: cover;
+            background-position: center center;
+            margin-left: 50%;
+            height: 200px;
+            width: 15%;
+            text-align: center;
+            color: pink;
+            justify-content: center;
+        }
+        #JornadaExtra h2{
+            margin-top: -20px;
+        }
+        #JornadaExtra{
+            background-image: linear-gradient(
+                0deg,
+                rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)
+            ),url("media/plantel.jpg");
+            background-size: cover;
+            background-position: center center;
+            height: 100%px;
+            width: 100%;
+            color: black;
+            justify-content: center;
+        }
+        .color-acento2{color: rgb(222, 242, 252);}
+        #QuintaHora{
+            text-align: center;
+            padding: 200px 12px;
+        }
+
+            #QuintaHora .img-container{
+                background-image: linear-gradient(
+                    0deg,
+                    rgba(0,0,0,0.5),
+                    rgba(0,0,0,0.5)
+                ),url("media/Maestro1.png");
+                background-size: cover;
+                background-position: center center;
+                height: 200px;
+                width: 15%;
+                text-align: center;
+                color: pink;
+                justify-content: center;
+            }
+            #QuintaHora h2{
+                margin-top: -20px;
+            }
+            #QuintaHora{
+                background-image: linear-gradient(
+                    0deg,
+                    rgba(0,0,0,0.5),
+                    rgba(0,0,0,0.5)
+                ),url("media/plantel2.jpg");
+                background-size: cover;
+                background-position: center center;
+                height: 100%px;
+                width: 100%;
+                color: black;
+                justify-content: center;
+            }
+            .color-acento3{color: rgb(196, 100, 36);}}
+       
+            
+            #comunicacion{
+                text-align: left;
+                
+            }
+            #Ctitanic{
+                text-align: center;
+                padding: 80px 12px;
+            }
+            #ctitanic{
+                margin-top: 0%;
+                
+            }
+            #Queeslengua{
+                text-align: center;
+                
+                }
+            iframe{
+                box-shadow: 3px 0px 3px orangered,
+                0px 3px 0px orangered,
+                -3px 0px 0px orangered,
+                0px -3px 0px orangered;
+ 
+                 
+             }
+             #hero2{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                flex-direction: column;
+                height: 100vh;
+                background-image: linear-gradient(
+                    0deg,
+                    rgba(0,0,0,0.5),
+                    rgba(0,0,0,0)
+                );
+                background-image: url("media/equipo.jpg"    );
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            #hero2 h1{
+                color: rgb(196, 100, 36);
+                text-shadow: 1px 0px 0px black,
+                    0px 1px 0px black,
+                    -1px 0px 0px black,
+                    0px -1px 0px black;
+                    box-shadow: 2px 0px 2px,
+                    0px 2px 0px,
+                    -2px 0px 0px,
+                    0px -2px 0px;
+            }
+            video{
+                box-shadow: 3px 0px 3px orangered,
+                0px 3px 0px orangered,
+                -3px 0px 0px orangered,
+                0px -3px 0px orangered;}
+                #C2titanic{
+                    text-align: center;
+                    padding: 80px 12px;
+                }
+                #C2titanic{
+                    text-align: center;
+                    padding: 150px 12px;}
+                #C2titanic{
+                    margin-top: 0%;
+                    
+                }
+                
+                #Trabajoequipo{
+                    text-align: center;}
+                    #Trabajoequipo h2{
+                        margin-top: 0px;}
+                        #Trabajoequipo{
+                            text-align: center;
+                            padding: 80px 12px;}
